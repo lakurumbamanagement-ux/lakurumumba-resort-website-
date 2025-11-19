@@ -84,9 +84,9 @@
                 </div>
             </div>
 
-            <!-- Placeholder Image/Mockup -->
+            <!-- Main Hero Image (Updated) -->
             <div class="mt-16 overflow-hidden rounded-3xl shadow-2xl ring-4 ring-emerald-50/50">
-                <img src="https://placehold.co/1200x600/059669/FFFFFF?text=Luxury+Lakurumba+Villa+View" alt="Tropical Villa View" class="w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/1200x600/059669/FFFFFF?text=Luxury+Lakurumba+Villa+View';">
+                <img src="https://images.unsplash.com/photo-1542385108-9b841a067099?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Tropical Villa View with Infinity Pool" class="w-full h-auto object-cover" onerror="this.onerror=null;this.src='https://placehold.co/1200x600/059669/FFFFFF?text=Luxury+Lakurumba+Villa+View';">
             </div>
         </div>
     </header>
@@ -217,12 +217,13 @@
 
             <!-- Contact Form Container -->
             <div class="mt-12">
-                <!-- IMPORTANT: In a real-world scenario, you would need a backend script (e.g., PHP, Firebase Function) to handle the form submission and send the email. The 'action' attribute below is set to '#' for demonstration. -->
-                <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+                <!-- IMPORTANT: Netlify automatically handles form submission if you add the 'netlify' attribute and a unique 'name' attribute to the form. -->
+                <form name="contact-inquiry" netlify method="POST" class="grid grid-cols-1 gap-y-6">
                     
                     <div>
                         <label for="full-name" class="block text-sm font-medium text-gray-700">Full name</label>
                         <div class="mt-1">
+                            <!-- Ensure each input has a unique 'name' attribute -->
                             <input type="text" name="full-name" id="full-name" autocomplete="name" placeholder="John Doe"
                                 class="py-3 px-4 block w-full shadow-sm focus:ring-emerald-500 focus:border-emerald-500 border-gray-300 rounded-xl transition duration-150" required>
                         </div>
